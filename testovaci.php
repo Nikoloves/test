@@ -8,13 +8,6 @@ abstract class Front_BasePresenter extends CommonBasePresenter {
 	 */
       
   
- /*  protected $nastaveni;
-    protected $nastav;
-    public function injectionNastaveni(NastaveniModel $nastaveni)
-	{
-		$this->nastaveni = $nastaveni;
-
-	} */
     public function injectionSmes(SmesModel $nastav)
 	{
 		$this->nastav = $nastav;
@@ -36,7 +29,7 @@ abstract class Front_BasePresenter extends CommonBasePresenter {
     $myform->onSuccess[] = callback($this, 'taskSubmitted');
     return $myform;
 }
-//odeslání
+//odeslÃ¡nÃ­
 public function taskSubmitted(AppForm $myform)
 {
     $values = (array) $myform->values;
